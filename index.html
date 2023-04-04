@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizado de Despesas Mensais</title>
+</head>
+<body>
+    <header>
+        <div class="area-header"> 
+            <div class="img-title">
+                <img src="assets/img/logo.jpg" alt="">
+            </div>
+            <div class="title">
+                <h1>Monthly Expense</h1>
+            </div>
+            <div class="menu-mobile-icon">
+                <img src="assets/img/menu-icon-mobile-20.jpg" alt="">
+            </div>
+        </div>
+    </header>   
+    <div class="area-total">
+        <section>
+            <div class="area-register">
+                <fieldset>
+                    <div class="closed">
+                       <span>X</span> 
+                    </div>
+                <legend>Nova Despesa</legend>
+                     <label>Nome da Despesa: <br>
+                        <input id="name" type="text" placeholder="Despesa">
+                        <span id="erro-name"></span>
+                    </label>    
+                    <label>Valor em R$: <br>
+                        <input id="value" type="number" placeholder="00.00" >
+                        <span id="erro-vlr" ></span>
+                    </label> 
+                    <label>Dia do Vencimento: <br>
+                        <input id="day" type="number" placeholder="01 ao 31">
+                        <span id="erro-day"></span>
+                    </label> 
+                    <label >Mês:
+                        <select id="month" name="select">
+                            <option value="Janeiro">Janeiro</option>
+                            <option value="Fevereiro">Fevereiro</option>
+                            <option value="Março">Março</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Maio">Maio</option>
+                            <option value="Junho">Junho</option>
+                            <option value="Julho">Julho</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Setembro">Setembro</option>
+                            <option value="Outubro">Outubro</option>
+                            <option value="Novembro">Novembro</option>
+                            <option value="Dezembro">Dezembro</option>
+                        </select>
+                    </label>
+                    <div class="send">
+                        <button>Enviar</button>
+                    </div>
+                    <div class="info"></div>  
+                </fieldset>
+            </div>
+        </section> 
+        <div class="area-expense">
+             <div class="title-expense">
+                <div class="button-send">
+                    <button>Nova Despesa </button> 
+                </div>
+                <h2>Despesa do Mês <span>Janeiro</span></h2>
+                <div class="area-delete">
+                    <img src="assets/img/trash-can-with-cover.png" alt="">
+                </div>
+            </div>
+    
+            <div class="area-table-expense">
+                <div class="area-a">
+                    <div class="title-a">
+                        Despesas 
+                    </div>
+                    <div class="area-despesa-pay"> 
+                        <div class="area-info-a">
+                            <div class="name">Despesa</div>
+                            <div class="vlr">Valor</div>
+                            <div class="venc">Dia</div>
+                        </div> 
+                        <div class="area-pay">
+                           
+                        </div>                         
+                    </div>
+                    <div class="area-result">
+                       <span>Total:</span> <span id="total-a"> R$ 00,00 </span> 
+                    </div>
+                </div>
+                <div class="area-b">
+                    <div class="title-b">
+                        Despesas Atrasadas
+                    </div>
+                    <div class="area-despesa-delayed">
+                        <div class="area-info-b">
+                            <div class="name">Despesa</div>
+                            <div class="vlr">valor</div>
+                            <div class="venc">Dia</div>
+                        </div>
+                        <div class="area-delayed">
+                          
+                        </div>
+                    </div>
+                    <div class="area-result">
+                        <span>Total:</span> <span id="total-b"> R$ 00,00 </span> 
+                    </div>
+                </div>
+                <div class="area-c">
+                    <div class="title-c">
+                        Despesas Pagas
+                    </div>
+                    <div class="area-despesa-paid">
+                        <div class="area-info-c">
+                            <div class="name">Despesa</div>
+                            <div class="vlr">Valor</div>
+                            <div class="venc">Dia</div>
+                        </div>
+                        <div class="area-paid">
+                            
+                        </div>
+                    </div>
+                    <div class="area-result">
+                        <span>Total:</span> <span id="total-c"> R$ 00,00 </span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- area mobile-->
+      <section>
+        <div class="register-mobile">
+            <div class="title-register">
+                <h2>Nova Despesa</h2>
+            </div>
+            
+            <label>Nome da Despesa: <br>
+               <input id="name-mobile" type="text" placeholder="Despesa">
+               <span id="erro-name-mobile"></span>
+           </label>    
+           <label>Valor em R$: <br>
+               <input id="value-mobile" type="number" placeholder="00.00" >
+               <span id="erro-vlr-mobile"></span>
+           </label> 
+           <label>Dia do Vencimento: <br>
+               <input id="day-mobile" type="number" placeholder="01 ao 31">
+               <span id="erro-day-mobile"></span>
+           </label> 
+           <label >Mês:
+                <select id="month-mobile" name="select">
+                    <option value="Janeiro">Janeiro</option>
+                    <option value="Fevereiro">Fevereiro</option>
+                    <option value="Março">Março</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Maio">Maio</option>
+                    <option value="Junho">Junho</option>
+                    <option value="Julho">Julho</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Setembro">Setembro</option>
+                    <option value="Outubro">Outubro</option>
+                    <option value="Novembro">Novembro</option>
+                    <option value="Dezembro">Dezembro</option>
+                </select>
+           </label>
+           <div class=" send mobile">
+               <button>Enviar</button>
+           </div>
+           <div class="info-mobile"></div>    
+        </div>
+    </section>
+  
+    </div>
+    <div class="footer-mobile">Criado Por <span>Resller M. Dias</span></div>
+    <footer>Criado Por <span>Resller M. Dias</span></footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
