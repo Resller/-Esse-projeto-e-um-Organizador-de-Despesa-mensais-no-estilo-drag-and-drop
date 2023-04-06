@@ -515,6 +515,9 @@ footer span{
 
 
 @media(max-width:765px){
+    body{
+        overflow: visible;
+    }
     .button-send button{
         font-size: 16px;
         padding: 10px 20px;
